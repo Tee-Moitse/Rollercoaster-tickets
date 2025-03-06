@@ -8,24 +8,24 @@ if height >= 120:
     #age
     age = int(input("What is your age? "))
     if age >= 10 and age < 18:
-        print("Please pay $5.")
-        bill += 5
+        print("Please pay R10.")
+        bill += 10
     elif age >= 18 and age < 45:
-        print("Please pay $7.")
-        bill += 7
+        print("Please pay R20.")
+        bill += 20
     elif age >= 45 and age <=55:
         print("You can have a free ride!!Yayy!")
     else:
-        print("Please pay $12.")
+        print("Please pay R12.")
         bill += 12
     #photos
     photo = input("Do you want to get a picture? Type 'yes' or 'no': ")
     if photo == "yes":
-        print("Photos are $3")
-        bill += 3
+        print("Photos are R5")
+        bill += 5
     else:
         print("Okay.")
 else:
     print("Sorry you have to grow taller before you can ride.")
 
-print(f"Your total bill is: {bill}")
+print(f"Your total bill is: R{bill}")
